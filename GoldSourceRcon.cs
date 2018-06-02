@@ -14,11 +14,12 @@ public class GoldSourceRcon
         rcon_password = rconPassword;
         debug = debugFlag;
     }
+	
+    private System.Text.Encoding enc = System.Text.Encoding.UTF8;
 
     // UDP Socket Properties
     private System.Net.IPEndPoint remoteEP;
     private System.Net.Sockets.UdpClient udpClient;
-    private System.Text.Encoding enc = System.Text.Encoding.UTF8;
 
     // Rcon Protocol Properties
     private int challengeID  = 0;

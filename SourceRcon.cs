@@ -30,9 +30,11 @@ public class SourceRcon
         debug = debugFlag;
     }
 
+    private System.Text.Encoding enc = System.Text.Encoding.UTF8;
+	
     // TCP Socket Properties
     private System.Net.Sockets.TcpClient tcpClient;
-    private System.Text.Encoding enc = System.Text.Encoding.UTF8;
+	
     // TCP Client Network stream Property
     private System.Net.Sockets.NetworkStream stream;
 
